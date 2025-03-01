@@ -14,3 +14,5 @@ for(i =0 ; i<myname.length; i++){
 // existe o replace():
 let myString = "O rato roeu roupa do rei de roma";
 console.log(myString.replace(/r/g, "$%"));
+// fatiamento:
+console.log(myString.slice(0,10, -2));

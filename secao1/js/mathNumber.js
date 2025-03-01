@@ -1,0 +1,10 @@
+const number = Number(prompt("Set your number: "));
+const numeroTitulo= document.getElementById("number");
+const texto= document.getElementById("texto");
+numeroTitulo.innerHTML = number;
+texto.innerHTML = `Seu numero +2: ${number+2}<br/>`;
+texto.innerHTML += `A raiz quadrada: ${Math.sqrt(number)}<br/>`; 
+texto.innerHTML += `É um inteiro: ${Number.isInteger(number)}<br/>`; 
+texto.innerHTML += `Arredondado para baixo: ${Math.floor(number)}<br/>`; 
+texto.innerHTML += `Arredondando para cima ${Math.ceil(number)}<br/>`;
+texto.innerHTML += `Com duas casas decimais: ${number.toFixed(2)}<br/>`; 
